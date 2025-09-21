@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notely | Premium Stationery Shop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Notely</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="notebooks.html">Notebooks</a></li>
+                <li><a href="pens.html">Pens</a></li>
+                <li><a href="art-supplies.html">Art Supplies</a></li>
+                <li><a href="planners.html">Planners</a></li>
+                <li><a href="office-essentials.html">Office</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Write. Create. Inspire.</h1>
+                <p class="hero-subtitle">Discover premium stationery that sparks creativity and enhances your everyday writing experience.</p>
+                <button class="cta-button">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <div class="floating-elements">
+                    <div class="floating-element notebook"></div>
+                    <div class="floating-element pen"></div>
+                    <div class="floating-element pencil"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Discover our best-selling stationery essentials</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/nb1.jpg" alt="Premium Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Leather Notebook</h3>
+                        <p class="product-price">24 dh</p>
+                        <button class="add-to-cart" data-product="Premium Leather Notebook" data-price="24.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/pen1.jpg" alt="Gel Pen Set">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smooth Gel Pen Set</h3>
+                        <p class="product-price">12 dh</p>
+                        <button class="add-to-cart" data-product="Smooth Gel Pen Set" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ct4.jpg" alt="Watercolor Set">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Watercolor Set</h3>
+                        <p class="product-price">39 dh</p>
+                        <button class="add-to-cart" data-product="Professional Watercolor Set" data-price="39.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/mp1.jpg" alt="Weekly Planner">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Weekly Planner 2025</h3>
+                        <p class="product-price">18 dh</p>
+                        <button class="add-to-cart" data-product="Weekly Planner 2025" data-price="18.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/dt1.jpg" alt="Desk Organizer">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bamboo Desk Organizer</h3>
+                        <p class="product-price">29 dh</p>
+                        <button class="add-to-cart" data-product="Bamboo Desk Organizer" data-price="29.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/pen2.jpg" alt="Colored Pencils">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Colored Pencils</h3>
+                        <p class="product-price">22 dh</p>
+                        <button class="add-to-cart" data-product="Professional Colored Pencils" data-price="22.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/nb2.jpg" alt="Spiral Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Spiral Bound Notebook</h3>
+                        <p class="product-price">15 dh</p>
+                        <button class="add-to-cart" data-product="Spiral Bound Notebook" data-price="15.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ct6.jpg" alt="Art Brushes">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Art Brush Set</h3>
+                        <p class="product-price">34 dh</p>
+                        <button class="add-to-cart" data-product="Premium Art Brush Set" data-price="34.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ec1.jpg" alt="Office Supplies">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Office Essentials Kit</h3>
+                        <p class="product-price">28 dh</p>
+                        <button class="add-to-cart" data-product="Office Essentials Kit" data-price="28.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/np1.jpg" alt="Note Pads">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sticky Note Collection</h3>
+                        <p class="product-price">9 dh</p>
+                        <button class="add-to-cart" data-product="Sticky Note Collection" data-price="9.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/pen3.jpg" alt="Fountain Pen">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Luxury Fountain Pen</h3>
+                        <p class="product-price">45 dh</p>
+                        <button class="add-to-cart" data-product="Luxury Fountain Pen" data-price="45.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/mp2.jpg" alt="Monthly Planner">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Monthly Goal Planner</h3>
+                        <p class="product-price">21 dh</p>
+                        <button class="add-to-cart" data-product="Monthly Goal Planner" data-price="21.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <p class="section-subtitle">Find exactly what you need for your creative journey</p>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Notebooks</h3>
+                    <p>Premium journals and notebooks for all your writing needs</p>
+                    <a href="notebooks.html" class="category-btn">Browse Collection</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-pen"></i>
+                    </div>
+                    <h3>Pens</h3>
+                    <p>Smooth writing instruments from gel pens to fountain pens</p>
+                    <a href="pens.html" class="category-btn">Browse Collection</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Art Supplies</h3>
+                    <p>Professional-grade materials for artists and hobbyists</p>
+                    <a href="art-supplies.html" class="category-btn">Browse Collection</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Planners</h3>
+                    <p>Stay organized with our beautiful planning collections</p>
+                    <a href="planners.html" class="category-btn">Browse Collection</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Office Essentials</h3>
+                    <p>Everything you need for a productive workspace</p>
+                    <a href="office-essentials.html" class="category-btn">Browse Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>At A-Station, we believe that great ideas deserve great tools. Since 2020, we've been curating the finest collection of stationery items from around the world, bringing you premium notebooks, pens, art supplies, and office essentials that inspire creativity and enhance productivity.</p>
+                    <p>Our commitment to quality means every product in our collection is carefully selected for its craftsmanship, functionality, and aesthetic appeal. Whether you're a student taking notes, an artist sketching dreams, or a professional organizing tasks, we have the perfect tools to accompany your journey.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Fast Shipping</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/person.png" alt="Our Story">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Join thousands of satisfied customers worldwide</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The quality of notebooks from A-Station is exceptional. The paper is smooth and perfect for fountain pens."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/person.png" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Ahmad</h4>
+                            <span>Graphic Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing selection of art supplies! The watercolor set I bought exceeded my expectations. Fast shipping too!"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/person.png" alt="Michael Chen">
+                        <div>
+                            <h4>Micham Rabii</h4>
+                            <span>Art Student</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Perfect for organizing my work life. The planner design is beautiful and functional. Will definitely order again!"</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/person.png" alt="Emily Rodriguez">
+                        <div>
+                            <h4>Nawal Amin</h4>
+                            <span>Project Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Inspired</h2>
+                <p>Subscribe to our newsletter for exclusive deals, new arrivals, and creative inspiration delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="newsletter-note">*No spam, unsubscribe anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A-Station</h3>
+                    <p>Premium stationery for creative minds. Write your story with us.</p>
+                    <div class="social-links">
+                        <a href="#" title="Follow us on Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Follow us on Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Follow us on Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Follow us on Pinterest" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Pens</a></li>
+                        <li><a href="#">Art Supplies</a></li>
+                        <li><a href="#">Planners</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Av Moulay Rachid, Sala Al Jadida</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> crafters.contact.community@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Notely. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebooks | A-Station - Premium Stationery Shop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">A-Station</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="#" class="active">Notebooks</a></li>
+                <li><a href="pens.html">Pens</a></li>
+                <li><a href="art-supplies.html">Art Supplies</a></li>
+                <li><a href="planners.html">Planners</a></li>
+                <li><a href="office-essentials.html">Office</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Hero -->
+    <section class="category-hero">
+        <div class="container">
+            <div class="category-hero-content">
+                <h1>Premium Notebooks</h1>
+                <p>Discover our collection of high-quality notebooks perfect for writing, sketching, and organizing your thoughts.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> > <span>Notebooks</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" title="Sort products">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name A-Z</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid" title="Grid View" aria-label="Grid View"><i class="fas fa-th"></i></button>
+                    <button class="view-btn" data-view="list" title="List View" aria-label="List View"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="category-products">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <div class="product-card" data-price="24.99" data-name="Premium Leather Notebook">
+                    <div class="product-image">
+                        <img src="assets/images/nb1.jpg" alt="Premium Leather Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Leather Notebook</h3>
+                        <p class="product-description">Handcrafted leather cover with premium paper</p>
+                        <p class="product-price">$24.99</p>
+                        <button class="add-to-cart" data-product="Premium Leather Notebook" data-price="24.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="15.99" data-name="Spiral Bound Notebook">
+                    <div class="product-image">
+                        <img src="assets/images/nb2.jpg" alt="Spiral Bound Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Spiral Bound Notebook</h3>
+                        <p class="product-description">Convenient spiral binding for easy page turning</p>
+                        <p class="product-price">$15.99</p>
+                        <button class="add-to-cart" data-product="Spiral Bound Notebook" data-price="15.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="19.99" data-name="Hardcover Journal">
+                    <div class="product-image">
+                        <img src="assets/images/nb3.jpg" alt="Hardcover Journal">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hardcover Journal</h3>
+                        <p class="product-description">Durable hardcover with dotted pages</p>
+                        <p class="product-price">$19.99</p>
+                        <button class="add-to-cart" data-product="Hardcover Journal" data-price="19.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="12.99" data-name="Pocket Notebook Set">
+                    <div class="product-image">
+                        <img src="assets/images/nb4.jpg" alt="Pocket Notebook Set">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pocket Notebook Set</h3>
+                        <p class="product-description">Set of 3 compact notebooks for on-the-go</p>
+                        <p class="product-price">$12.99</p>
+                        <button class="add-to-cart" data-product="Pocket Notebook Set" data-price="12.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="27.99" data-name="Eco-Friendly Notebook">
+                    <div class="product-image">
+                        <img src="assets/images/nb5.jpg" alt="Eco-Friendly Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Eco-Friendly Notebook</h3>
+                        <p class="product-description">Made from recycled materials</p>
+                        <p class="product-price">$27.99</p>
+                        <button class="add-to-cart" data-product="Eco-Friendly Notebook" data-price="27.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="16.99" data-name="Graph Paper Notebook">
+                    <div class="product-image">
+                        <img src="assets/images/nb6.jpg" alt="Graph Paper Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Graph Paper Notebook</h3>
+                        <p class="product-description">Perfect for technical drawings and math</p>
+                        <p class="product-price">$16.99</p>
+                        <button class="add-to-cart" data-product="Graph Paper Notebook" data-price="16.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="22.99" data-name="Artist Sketchbook">
+                    <div class="product-image">
+                        <img src="assets/images/nb7.jpg" alt="Artist Sketchbook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Artist Sketchbook</h3>
+                        <p class="product-description">Heavy-weight paper for all art mediums</p>
+                        <p class="product-price">$22.99</p>
+                        <button class="add-to-cart" data-product="Artist Sketchbook" data-price="22.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="14.99" data-name="Lined Composition Book">
+                    <div class="product-image">
+                        <img src="assets/images/nb8.jpg" alt="Lined Composition Book">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lined Composition Book</h3>
+                        <p class="product-description">Classic lined pages for all writing needs</p>
+                        <p class="product-price">$14.99</p>
+                        <button class="add-to-cart" data-product="Lined Composition Book" data-price="14.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="18.99" data-name="Waterproof Notebook">
+                    <div class="product-image">
+                        <img src="assets/images/nb9.jpg" alt="Waterproof Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Waterproof Notebook</h3>
+                        <p class="product-description">Weather-resistant for outdoor use</p>
+                        <p class="product-price">$18.99</p>
+                        <button class="add-to-cart" data-product="Waterproof Notebook" data-price="18.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="25.99" data-name="Executive Notebook">
+                    <div class="product-image">
+                        <img src="assets/images/nb10.jpg" alt="Executive Notebook">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Executive Notebook</h3>
+                        <p class="product-description">Professional design for business use</p>
+                        <p class="product-price">$25.99</p>
+                        <button class="add-to-cart" data-product="Executive Notebook" data-price="25.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="13.99" data-name="Student Notebook Pack">
+                    <div class="product-image">
+                        <img src="assets/images/nb11.jpg" alt="Student Notebook Pack">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Student Notebook Pack</h3>
+                        <p class="product-description">Bundle of 5 notebooks for students</p>
+                        <p class="product-price">$13.99</p>
+                        <button class="add-to-cart" data-product="Student Notebook Pack" data-price="13.99">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-price="21.99" data-name="Bullet Journal">
+                    <div class="product-image">
+                        <img src="assets/images/nb12.jpg" alt="Bullet Journal">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bullet Journal</h3>
+                        <p class="product-description">Dotted pages perfect for bullet journaling</p>
+                        <p class="product-price">$21.99</p>
+                        <button class="add-to-cart" data-product="Bullet Journal" data-price="21.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A-Station</h3>
+                    <p>Premium stationery for creative minds. Write your story with us.</p>
+                    <div class="social-links">
+                        <a href="#" title="Follow us on Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Follow us on Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Follow us on Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Follow us on Pinterest" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="notebooks.html">Notebooks</a></li>
+                        <li><a href="pens.html">Pens</a></li>
+                        <li><a href="art-supplies.html">Art Supplies</a></li>
+                        <li><a href="planners.html">Planners</a></li>
+                        <li><a href="office-essentials.html">Office Essentials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#testimonials">Reviews</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Creative Street, Art District</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> hello@a-station.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 A-Station. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div class="cart-overlay"></div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/category.js"></script>
+</body>
+</html>
