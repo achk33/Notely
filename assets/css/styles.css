@@ -42,18 +42,19 @@ body {
 
 /* Dark Theme */
 [data-theme="dark"] {
-    --text-primary: #e6e6e6;
-    --text-secondary: #b3b3b3;
-    --background-light: #171717;
-    --background-white: #1f1f1f;
-    --border-color: #2a2a2a;
-    --shadow-light: rgba(0, 0, 0, 0.4);
-    --shadow-medium: rgba(0, 0, 0, 0.6);
-    --shadow-strong: rgba(0, 0, 0, 0.7);
-    --navbar-bg: rgba(18, 18, 18, 0.8);
-    --navbar-bg-scrolled: rgba(18, 18, 18, 0.95);
-    --overlay-backdrop: rgba(0, 0, 0, 0.75);
-    --footer-bg: #111111;
+    /* Dark blue theme */
+    --text-primary: #e9eefc;        /* near-white with blue tint */
+    --text-secondary: #b9c4e0;      /* soft desaturated blue */
+    --background-light: #0f1830;    /* deep indigo for light sections */
+    --background-white: #0b1426;    /* darkest blue background */
+    --border-color: #253457;        /* muted navy border */
+    --shadow-light: rgba(0, 10, 40, 0.35);
+    --shadow-medium: rgba(0, 10, 40, 0.55);
+    --shadow-strong: rgba(0, 10, 40, 0.7);
+    --navbar-bg: rgba(8, 16, 36, 0.8);
+    --navbar-bg-scrolled: rgba(8, 16, 36, 0.95);
+    --overlay-backdrop: rgba(2, 8, 24, 0.75);
+    --footer-bg: #081024;
 }
 
 /* Smooth Scrolling */
@@ -990,11 +991,11 @@ h1, h2, h3, h4, h5, h6 {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--background-white);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px var(--shadow-light);
         z-index: 999;
         padding: 2rem 0;
     }
