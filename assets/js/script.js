@@ -344,6 +344,26 @@ class ThemeManager {
         const next = current === 'dark' ? 'light' : 'dark';
         this.apply(next);
         localStorage.setItem(this.key, next);
+        
+        // Update navbar background immediately after theme change
+        this.updateNavbarBackground();
+    }
+
+    updateNavbarBackground() {
+        const navbar = document.querySelector('.navbar');
+        if (!navbar) return;
+        
+        // Small delay to allow CSS variables to update
+        setTimeout(() => {
+            // Apply the correct navbar background based on scroll position and current theme
+            if (window.scrollY > 100) {
+                navbar.style.background = getComputedStyle(document.documentElement).getPropertyValue('--navbar-bg-scrolled').trim() || 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.background = getComputedStyle(document.documentElement).getPropertyValue('--navbar-bg').trim() || 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        }, 10);
     }
 
     setupToggle() {

@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Smooth transitions for theme switching */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Override transition for elements that need faster/different animations */
+*:where(:hover, :focus, :active) {
+    transition-duration: 0.15s;
 }
 
 body {
@@ -38,6 +45,22 @@ body {
     --navbar-bg-scrolled: rgba(255, 255, 255, 0.98);
     --overlay-backdrop: rgba(0, 0, 0, 0.8);
     --footer-bg: #2d3748;
+    
+    /* Transition duration for theme switching */
+    --theme-transition-duration: 0.3s;
+}
+
+/* Ensure smooth theme transitions on html element */
+html {
+    transition: background-color var(--theme-transition-duration) ease;
+}
+
+/* Additional transition for body and major containers */
+body, .navbar, .hero, .section, .footer {
+    transition: background-color var(--theme-transition-duration) ease, 
+                color var(--theme-transition-duration) ease,
+                border-color var(--theme-transition-duration) ease,
+                box-shadow var(--theme-transition-duration) ease;
 }
 
 /* Dark Theme */
@@ -184,9 +207,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .theme-toggle:active { transform: scale(0.96); }
 
-.theme-toggle .fa-sun { display: none; }
-[data-theme="dark"] .theme-toggle .fa-moon { display: none; }
-[data-theme="dark"] .theme-toggle .fa-sun { display: inline-block; }
+.theme-toggle .fa-sun { 
+    display: none; 
+    transition: opacity 0.2s ease;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon { 
+    display: none; 
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun { 
+    display: inline-block; 
+}
 
 .cart-icon {
     position: relative;
